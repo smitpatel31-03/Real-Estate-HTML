@@ -231,6 +231,7 @@ img {
 
 .footer-links div {
     min-width: 150px;
+    text-align: center;
 }
 
 .footer-links h4 {
@@ -2019,7 +2020,7 @@ img {
 
     .footer-links {
         width: 100%;
-        flex: 2 1 100px;
+        flex: 1 1 100px;
         flex-direction: row;
         justify-content: center;
     }
