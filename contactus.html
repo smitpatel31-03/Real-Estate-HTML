@@ -50,7 +50,7 @@
         </section>
 
         <section class="contactus-contect-form-div" id="c-contact-form">
-            <form>
+            <form id="realEstateForm">
                 <div class="contactus-form-group">
                     <label for="firstName">First Name</label>
                     <input type="text" name="firstName" placeholder="Enter First Name" />
@@ -71,12 +71,32 @@
                     <label for="inquiryType">Inquiry Type</label>
                     <select name="inquiryType">
                         <option>Select Inquiry Type</option>
+                        <option value="buy">Buy a Property</option>
+                        <option value="rent">Rent a Property</option>
+                        <option value="sell">Sell a Property</option>
+                        <option value="lease">Lease a Property</option>
+                        <option value="schedule_visit">Schedule a Visit</option>
+                        <option value="valuation">Request Property Valuation</option>
+                        <option value="project_info">Project Information</option>
+                        <option value="investment">Investment Inquiry</option>
+                        <option value="collaboration">Collaboration/Partnership</option>
+                        <option value="other">Other</option>
                     </select>
                 </div>
                 <div class="contactus-form-group">
                     <label for="referral">How Did You Hear About Us?</label>
                     <select name="referral">
                         <option>Select</option>
+                        <option value="google">Google Search</option>
+                        <option value="social_media">Social Media (Instagram, Facebook, etc.)</option>
+                        <option value="friend">Friend or Family</option>
+                        <option value="ad">Online Advertisement</option>
+                        <option value="event">Event or Expo</option>
+                        <option value="flyer">Flyers/Brochures</option>
+                        <option value="real_estate_portal">Real Estate Portal (e.g., 99acres, MagicBricks)</option>
+                        <option value="youtube">YouTube</option>
+                        <option value="email">Email Campaign</option>
+                        <option value="other">Other</option>
                     </select>
                 </div>
                 <div class="contactus-form-group" style="width: 100%;">
@@ -209,6 +229,37 @@
         .then(data => {
             document.getElementById("footer").innerHTML = data;
         })
+</script>
+<script>
+    const form = document.getElementById('realEstateForm');
+    const successMessage = document.getElementById('successMessage');
+
+    // 🔗 Paste your Google Apps Script Web App URL here
+    // const scriptURL = "https://script.google.com/macros/s/AKfycbwAdGNCKkdB9cMV9Nc5IWHHOcVTDCFbkeHKX1kktbu5F5Wgni2HBMAojdBc06MHDR84/exec";
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwAdGNCKkdB9cMV9Nc5IWHHOcVTDCFbkeHKX1kktbu5F5Wgni2HBMAojdBc06MHDR84/exec';
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+
+  fetch(scriptURL, {
+    method: 'POST',
+    body: new FormData(form),
+  })
+    .then(response => {
+      if (response.ok) {
+        alert('Form submitted successfully!');
+        form.reset();
+      } else {
+        alert('Error submitting form. Please try again.');
+      }
+    })
+    .catch(error => {
+      alert('Error submitting form. Please try again.');
+      console.error('Error:', error);
+    });
+});
+
 </script>
 
 </html>
