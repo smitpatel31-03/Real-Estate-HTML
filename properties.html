@@ -12,7 +12,45 @@
         rel="stylesheet">
 </head>
 <body>
-    <header id="header"></header>
+    <header id="header">
+  <section class="header-heading">
+    <p id="header-heading">✨Discover Your Dream Property with ...</p>
+  </section>
+
+  <section class="header-logo-navigation">
+    <div id="header-logo">
+        <a href="/">
+            <img class="header-logo-image" src="images/logo.avif" alt="">
+        </a>
+    </div>
+
+   <nav id="header-navigation">
+  <div id="nav-close" onclick="toggleMenu()">×</div>
+  <ul class="header-nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="aboutUs.html">About Us</a></li>
+    <li class="dropdown"><a href="properties.html">Properties</a>
+    <ul class="dropdown-menu">
+    <li><a href="product1.html">Product 1</a></li>
+    <li><a href="product2.html">Product 2</a></li>
+    <li><a href="product3.html">Product 3</a></li>
+    <li><a href="product4.html">Product 4</a></li>
+    <li><a href="product5.html">Product 5</a></li>
+    <li><a href="Product6.html">Product 6</a></li>
+  </ul></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+  </ul>
+</nav>
+
+    <div id="header-button-div">
+      <button class="header-button">Contact Us</button>
+    </div>
+
+    <div id="hamburger" onclick="toggleMenu()">
+      &#9776;
+    </div>
+  </section>
+</header>
     <main>
         <section class="properties-banner-section">
             <h1>Find Your Dream Property</h1>
@@ -28,86 +66,178 @@
             </div>
             <div class="main-feature-properties-cards-div">
                 <div class="main-feature-properties-card">
-                    <div class="main-feature-properties-card-image-div">
-                        <img src="images/Property Image1.jpg" class="main-feature-properties-card-image" alt="">
+                    <a href="product1.html">
+                         <div class="main-feature-properties-card-image-div">
+                        <img src="images/Property Image 1.jpg" id="Product1-image" class="main-feature-properties-card-image" alt="">
                     </div>
                     <div class="main-feature-properties-card-titel-div">
-                        <p>Coastal Escapes - Where Waves Beckon</p>
-                        <h1>Seaside Serenity Villa</h1>
-                        <p>A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...<a href="">Read
+                        <h1 id="Product1-name" >Seaside Serenity Villa</h1>
+                        <p id="Product1-mini-discription">A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...<a href="product1.html">Read
                                 More</a></p>
                     </div>
-                    <div class="main-feature-properties-price-button-div">
-                        <div class="main-feature-properties-price-div">
-                            <p>Price</p>
-                            <h1>₹2,00,00,000</h1>
-                        </div>
-                        <div class="main-feature-properties-button-div">
-                            <button>View Propert Details</button>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="main-feature-properties-card">
-                    <div class="main-feature-properties-card-image-div">
-                        <img src="images/Property Image 2.jpg" class="main-feature-properties-card-image" alt="">
+                    <a href="product2.html">
+                        <div class="main-feature-properties-card-image-div">
+                        <img src="images/Property Image 2.jpg" id="Product2-image" class="main-feature-properties-card-image" alt="">
                     </div>
                     <div class="main-feature-properties-card-titel-div">
-                        <p>Urban Oasis - Life in the Heart of the City</p>
-                        <h1>Metropolitan Haven</h1>
-                        <p>Immerse yourself in the energy of the city. This modern apartment in the heart...<a href="">Read
-                                More</a></p>
+                         <h1 id="h-section1-card-name-2">Metropolitan Haven</h1>
+                        <p id="h-section1-card-discription-2">A chic and fully-furnished 2-bedroom apartment with panoramic city views... 
+                            <a href="product2.html">Read
+                                More</a>
+                            </p>
                     </div>
-                    <div class="main-feature-properties-price-button-div">
-                        <div class="main-feature-properties-price-div">
-                            <p>Price</p>
-                            <h1>₹1,50,00,000</h1>
-                        </div>
-                        <div class="main-feature-properties-button-div">
-                            <button>View Propert Details</button>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="main-feature-properties-card">
+                    <a href="product3.html">
                     <div class="main-feature-properties-card-image-div">
-                        <img src="images/Property Image 3.jpg" class="main-feature-properties-card-image" alt="">
+                        <img src="images/Property Image 3.jpg" id="Product3-image" class="main-feature-properties-card-image" alt="">
                     </div>
                     <div class="main-feature-properties-card-titel-div">
-                        <p>Countryside Charm - Escape to Nature's Embrace</p>
-                        <h1>Rustic Retreat Cottage</h1>
-                        <p>Find tranquility in the countryside. This charming cottage is nestled amidst rolling hills...<a href="">Read
+                        <h1 id="Product3-name">Rustic Retreat Cottage</h1>
+                        <p id="Product3-mini-discription">Find tranquility in the countryside. This charming cottage is nestled amidst rolling hills...<a href="product3.html">Read
                                 More</a></p>
                     </div>
-                    <div class="main-feature-properties-price-button-div">
-                        <div class="main-feature-properties-price-div">
-                            <p>Price</p>
-                            <h1>₹3,00,00,000</h1>
-                        </div>
-                        <div class="main-feature-properties-button-div">
-                            <button>View Propert Details</button>
-                        </div>
+                    </a>
+                </div>
+                <div class="main-feature-properties-card">
+                    <a href="Product4.html">
+                        <div class="main-feature-properties-card-image-div">
+                        <img src="images/Property Image 3.jpg" id="Product4-image" class="main-feature-properties-card-image" alt="">
                     </div>
+                    <div class="main-feature-properties-card-titel-div">
+                        <h1 id="Product4-name">Rustic Retreat Cottage</h1>
+                        <p id="Product4-mini-discription">Find tranquility in the countryside. This charming cottage is nestled amidst rolling hills...<a href="Product4.html">Read
+                                More</a></p>
+                    </div>
+                    </a>
+                </div>
+                <div class="main-feature-properties-card">
+                    <a href="Product5.html">
+                        <div class="main-feature-properties-card-image-div">
+                        <img src="images/Property Image 3.jpg" id="Product5-image" class="main-feature-properties-card-image" alt="">
+                    </div>
+                    <div class="main-feature-properties-card-titel-div">
+                        <h1 id="Product5-name">Rustic Retreat Cottage</h1>
+                        <p id="Product5-mini-discription">Find tranquility in the countryside. This charming cottage is nestled amidst rolling hills...<a href="Product5.html">Read
+                                More</a></p>
+                    </div>
+                    </a>
+                </div>
+                <div class="main-feature-properties-card">
+                    <a href="Product6.html">
+                        <div class="main-feature-properties-card-image-div">
+                        <img src="images/Property Image 3.jpg" id="Product6-image" class="main-feature-properties-card-image" alt="">
+                    </div>
+                    <div class="main-feature-properties-card-titel-div">
+                        <h1 id="Product6-name">Rustic Retreat Cottage</h1>
+                        <p id="Product6-mini-discription">Find tranquility in the countryside. This charming cottage is nestled amidst rolling hills...<a href="Product6.html">Read
+                                More</a></p>
+                    </div>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
-    <footer id="footer"></footer>
+    <footer id="footer">
+    <!-- Heading Section -->
+    <section class="footer-heading-section">
+      <div class="footer-heading-content">
+        <h2>Start Your Real Estate Journey Today</h2>
+        <p>Your dream property is just a click away. Explore our available properties or contact our expert team to take
+          the first step toward your real estate goals.</p>
+      </div>
+      <div class="footer-cta">
+        <button>Explore Properties</button>
+      </div>
+    </section>
+
+    <!-- Main Footer Content -->
+    <section class="footer-main">
+      <!-- Logo + Email -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="/">
+            <img src="images/logo.avif" alt="Estatein Logo" />
+            <h3 id="comapy-name">Estatein</h3>
+          </a>
+        </div>
+        <div class="footer-subscribe">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, voluptas temporibus officia amet laborum,
+            eveniet nobis voluptatibus vel illo officiis iste asperiores libero?
+          </p>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="/">Home</a>
+          <a href="aboutUs.html">About</a>
+          <a href="properties.html">Properties</a>
+          <a href="contactus.html">Contact</a>
+      </div>
+        <!-- <div>
+        <h4>About Us</h4>
+        <a href="aboutUs.html#a-ourjourney">Our Journey</a>
+        <a href="aboutUs.html#a-ourvalues">Our Values</a>
+        <a href="aboutUs.html#a-ourachievements">Achievements</a>
+        <a href="aboutUs.html#a-ourteam">Our Team</a>
+      </div>
+      <div>
+        <h4>Properties</h4>
+        <a href="properties.html#p-allproperties">All Properties</a>
+      </div> -->
+        <div class="footer-contact-us-div">
+          <h4>Contact</h4>
+          <li class="footer-contact-us-links">
+            <span>
+              <img class="footer-contact-us-links-image" src="images/phone.png" alt="">
+              <p>Call</p>
+            </span>
+            <a href="tel:+919090909090" id="footer-mobile-number">+91 90909 09090</a>
+          </li>
+          <li class="footer-contact-us-links">
+            <span>
+              <img class="footer-contact-us-links-image" src="images/email.png" alt="">
+              <p>Email</p>
+            </span>
+            <a href="mailto:abc@gmail.com" id="footer-mobile-number">abc@gmail.com</a>
+          </li>
+          <li class="footer-contact-us-links">
+            <span>
+              <img class="footer-contact-us-links-image" src="images/location.png" alt="">
+              <p>Address</p>
+            </span>
+            <a href="https://maps.app.goo.gl/BcRmBDJu2eUM2HXCA">
+              TF-A1-22, AKSHAR PAVILLION MALL,<br>
+              Vasna Bhayli Main Rd, near Priya Cinema 391410,<br>
+              Yogi Nagar Twp, Gokul Nagar, Vadodara, Gujarat 390007
+            </a>
+          </li>
+        </div>
+    </section>
+
+    <!-- Bottom Footer -->
+    <section class="footer-bottom">
+      <p>&copy; 2025 Smit Patel. All Rights Reserved.</p>
+      <div class="footer-social">
+        <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="images/x.png" alt="Twitter/X" /></a>
+        <a href="#"><img src="images/youtube.png" alt="YouTube" /></a>
+      </div>
+    </section>
+  </footer>
 </body>
 <script>
-    fetch("header.html")
-    .then(res => res.text())
-    .then(data => {
-        document.getElementById("header").innerHTML = data;
-
-        window.toggleMenu = function () {
-        const nav = document.getElementById("header-navigation");
-        nav.classList.toggle("open");
-      };
-    })
-
-    fetch("footer.html")
-    .then(res => res.text())
-    .then(data => {
-        document.getElementById("footer").innerHTML = data;
-    })
+  function toggleMenu() {
+    const nav = document.getElementById("header-navigation");
+    nav.classList.toggle("open");
+  }
 </script>
 </html>

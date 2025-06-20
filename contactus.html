@@ -15,12 +15,50 @@
 </head>
 
 <body>
-    <header id="header"></header>
+    <header id="header">
+  <section class="header-heading">
+    <p>✨Discover Your Dream Property with ...</p>
+  </section>
+
+  <section class="header-logo-navigation">
+    <div id="header-logo">
+        <a href="/">
+            <img class="header-logo-image" src="images/logo.avif" alt="">
+        </a>
+    </div>
+
+   <nav id="header-navigation">
+  <div id="nav-close" onclick="toggleMenu()">×</div>
+  <ul class="header-nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="aboutUs.html">About Us</a></li>
+    <li class="dropdown"><a href="properties.html">Properties</a>
+    <ul class="dropdown-menu">
+    <li><a href="product1.html">Product 1</a></li>
+    <li><a href="product2.html">Product 2</a></li>
+    <li><a href="product3.html">Product 3</a></li>
+    <li><a href="product4.html">Product 4</a></li>
+    <li><a href="product5.html">Product 5</a></li>
+    <li><a href="Product6.html">Product 6</a></li>
+  </ul></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+  </ul>
+</nav>
+
+    <div id="header-button-div">
+      <button class="header-button">Contact Us</button>
+    </div>
+
+    <div id="hamburger" onclick="toggleMenu()">
+      &#9776;
+    </div>
+  </section>
+</header>
     <main>
         <section class="contactus-banner-section">
             <div class="contactus-banner-div">
                 <h1>Get in Touch with ...</h1>
-                <p>Welcome to Estatein's Contact Us page. We're here to assist you with any inquiries, requests, or
+                <p id="c-banner-descrition">Welcome to Estatein's Contact Us page. We're here to assist you with any inquiries, requests, or
                     feedback
                     you may have. Whether you're looking to buy or sell a property, explore investment opportunities, or
                     simply want to connect, we're just a message away. Reach out to us, and let's start a conversation.
@@ -29,21 +67,22 @@
             <div class="contactus-banner-cards-div" id="c-contact-details">
                 <div class="contatus-banner-card">
                     <img src="images/email.png" alt="">
-                    <h3>info@estatein.com</h3>
+                    <h3 id="c-banner-card-email">info@estatein.com</h3>
                 </div>
                 <div class="contatus-banner-card ">
                     <img src="images/phone.png" alt="">
-                    <h3>+1 (123) 456-7890</h3>
+                    <h3 id="c-banner-card-phonr-number">+1 (123) 456-7890</h3>
                 </div>
                 <div class="contatus-banner-card">
                     <img src="images/location.png" alt="">
-                    <h3>Main Headquarters</h3>
+                    <h3 id="c-banner-card-location">Main Headquarters</h3>
                 </div>
                 <div class="contatus-banner-card" id="contactus-banner-card-insta-facebook">
                     <img src="images/social.png" alt="">
-                    <h3><a href="">Instagram</a>
-                        <p> · </p><a href="">LinkedIn</a>
-                        <p> · </p><a href="">Facebook</a>
+                    <h3>
+                        <a id="c-banner-cards-link-instagram" href="">Instagram</a>
+                        <p> · </p><a id="c-banner-cards-link-linkedin" href="">LinkedIn</a>
+                        <p> · </p><a id="c-banner-cards-link-facebook" href="">Facebook</a>
                     </h3>
                 </div>
             </div>
@@ -110,7 +149,7 @@
         <section class="contactus-address-section" id="c-office-location">
             <div class="contactus-address-heading-div">
                 <h1>Discover Our Office Locations</h1>
-                <p>Estatein is here to serve you across multiple locations. Whether you're looking to meet our team,
+                <p id="c-address-discription">Estatein is here to serve you across multiple locations. Whether you're looking to meet our team,
                     discuss
                     real estate opportunities, or simply drop by for a chat, we have offices conveniently located to
                     serve
@@ -119,9 +158,9 @@
             <div class="contactus-address-cards-div">
                 <div class="contactus-address-card">
                     <div class="contactus-address-card-description">
-                        <p>Main Headquarters</p>
-                        <h1>123 Estatein Plaza, City Center, Metropolis</h1>
-                        <p>Our main headquarters serve as the heart of Estatein. Located in the bustling city center,
+                        <p id="c-address-card-office-1">Main Headquarters</p>
+                        <h1 id="c-address-card-address-1">123 Estatein Plaza, City Center, Metropolis</h1>
+                        <p id="c-address-card-discription-1">Our main headquarters serve as the heart of Estatein. Located in the bustling city center,
                             this
                             is where our core team of experts operates, driving the excellence and innovation that
                             define
@@ -130,14 +169,14 @@
                     <div class="contactus-address-card-email-phone-loation-cards-div">
                         <div class="contactus-address-card-email-phone-loation-card">
                             <img src="images/email.png" alt="">
-                            <p>info@estatein.com</p>
+                            <p id="c-address-card-email-1">info@estatein.com</p>
                         </div>
                         <div class="contactus-address-card-email-phone-loation-card">
                             <img src="images/phone.png" alt="">
-                            <p>+1 (123) 456-7890</p>
+                            <p id="c-address-card-phone-number-1">+1 (123) 456-7890</p>
                         </div>
                         <div class="contactus-address-card-email-phone-loation-card">
-                            <img src="images/location.png" alt="">
+                            <img id="c-address-card-loction-1" src="images/location.png" alt="">
                             <p>Metropolis</p>
                         </div>
                     </div>
@@ -147,9 +186,9 @@
                 </div>
                 <div class="contactus-address-card">
                     <div class="contactus-address-card-description">
-                        <p>Main Headquarters</p>
-                        <h1>123 Estatein Plaza, City Center, Metropolis</h1>
-                        <p>Our main headquarters serve as the heart of Estatein. Located in the bustling city center,
+                        <p id="c-address-card-office-2">Main Headquarters</p>
+                        <h1 id="c-address-card-address-2">123 Estatein Plaza, City Center, Metropolis</h1>
+                        <p id="c-address-card-discription-2">Our main headquarters serve as the heart of Estatein. Located in the bustling city center,
                             this
                             is where our core team of experts operates, driving the excellence and innovation that
                             define
@@ -158,14 +197,14 @@
                     <div class="contactus-address-card-email-phone-loation-cards-div">
                         <div class="contactus-address-card-email-phone-loation-card">
                             <img src="images/email.png" alt="">
-                            <p>info@estatein.com</p>
+                            <p id="c-address-card-email-2">info@estatein.com</p>
                         </div>
                         <div class="contactus-address-card-email-phone-loation-card">
                             <img src="images/phone.png" alt="">
-                            <p>+1 (123) 456-7890</p>
+                            <p id="c-address-card-phone-number-2">+1 (123) 456-7890</p>
                         </div>
                         <div class="contactus-address-card-email-phone-loation-card">
-                            <img src="images/location.png" alt="">
+                            <img id="c-address-card-loction-2" src="images/location.png" alt="">
                             <p>Metropolis</p>
                         </div>
                     </div>
@@ -178,57 +217,140 @@
 
         <section class="contactus-gallary-section" id="c-gallary">
             <h1>Gallary</h1>
+            <!-- in gallary there is three equal size row and first two coloum has only photos and last row hase one photo and one content box -->
             <div class="contactus-gallary-row">
+                <!-- there is first row with two equal size photos placed in column -->
                 <div class="connectus-gallary-row1">
-                    <div class="connectus-gallary-row1-col1"><img src="images/gallary1.jpg"
+                    <div class="connectus-gallary-row1-col1"><img id="c-gallary-image-1" src="images/gallary1.jpg"
                             class="connectus-gallary-image1" alt=""></div>
-                    <div class="connectus-gallary-row1-col2"><img src="images/gallary2.jpg"
+                    <div class="connectus-gallary-row1-col2"><img id="c-gallary-image-2" src="images/gallary2.jpg"
                             class="connectus-gallary-image2" alt=""></div>
                 </div>
+                <!-- there is second row with three photos where 1 photot with one column and other 2 photo in one column -->
                 <div class="connectus-gallary-row2">
-                    <div class="connectus-gallary-row2-col1"><img src="images/gallary3.jpg"
+                    <div class="connectus-gallary-row2-col1"><img id="c-gallary-image-3" src="images/gallary3.jpg"
                             class="connectus-gallary-image3" alt=""></div>
                     <div class="connectus-gallary-row2-col2">
-                        <img src="images/gallary4.jpg" class="connectus-gallary-image4" alt="">
-                        <img src="images/gallary5.jpg" class="connectus-gallary-image5" alt="">
+                        <!-- This is two photo that set in one column -->
+                        <img id="c-gallary-image-4" src="images/gallary4.jpg" class="connectus-gallary-image4" alt="">
+                        <img id="c-gallary-image-5" src="images/gallary5.jpg" class="connectus-gallary-image5" alt="">
                     </div>
                 </div>
+                <!-- this is last row where there is one content box and one image -->
                 <div class="connectus-gallary-row3">
                     <div class="connectus-gallary-row3-col1">
-                        <h1>Explore ...'s World</h1>
-                        <p>Step inside the world of Estatein, where professionalism meets warmth, and expertise meets
+                        <h1 id="c-gallary-content-heading">Explore ...'s World</h1>
+                        <p id="c-gallary-content-discription">Step inside the world of Estatein, where professionalism meets warmth, and expertise meets
                             passion. Our gallery offers a glimpse into our team and workspaces, inviting you to get to
                             know
                             us better.</p>
                     </div>
                     <div class="connectus-gallary-row3-col2">
-                        <img src="images/gallary6.jpg" class="connectus-gallary-image6" alt="">
+                        <img id="c-gallary-image-6" src="images/gallary6.jpg" class="connectus-gallary-image6" alt="">
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer id="footer"></footer>
+   <footer id="footer">
+    <!-- Heading Section -->
+    <section class="footer-heading-section">
+      <div class="footer-heading-content">
+        <h2>Start Your Real Estate Journey Today</h2>
+        <p>Your dream property is just a click away. Explore our available properties or contact our expert team to take
+          the first step toward your real estate goals.</p>
+      </div>
+      <div class="footer-cta">
+        <button>Explore Properties</button>
+      </div>
+    </section>
+
+    <!-- Main Footer Content -->
+    <section class="footer-main">
+      <!-- Logo + Email -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="/">
+            <img src="images/logo.avif" alt="Estatein Logo" />
+            <h3 id="comapy-name">Estatein</h3>
+          </a>
+        </div>
+        <div class="footer-subscribe">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, voluptas temporibus officia amet laborum,
+            eveniet nobis voluptatibus vel illo officiis iste asperiores libero?
+          </p>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="/">Home</a>
+          <a href="aboutUs.html">About</a>
+          <a href="properties.html">Properties</a>
+          <a href="contactus.html">Contact</a>
+      </div>
+        <!-- <div>
+        <h4>About Us</h4>
+        <a href="aboutUs.html#a-ourjourney">Our Journey</a>
+        <a href="aboutUs.html#a-ourvalues">Our Values</a>
+        <a href="aboutUs.html#a-ourachievements">Achievements</a>
+        <a href="aboutUs.html#a-ourteam">Our Team</a>
+      </div>
+      <div>
+        <h4>Properties</h4>
+        <a href="properties.html#p-allproperties">All Properties</a>
+      </div> -->
+        <div class="footer-contact-us-div">
+          <h4>Contact</h4>
+          <li class="footer-contact-us-links">
+            <span>
+              <img class="footer-contact-us-links-image" src="images/phone.png" alt="">
+              <p>Call</p>
+            </span>
+            <a href="tel:+919090909090" id="footer-mobile-number">+91 90909 09090</a>
+          </li>
+          <li class="footer-contact-us-links">
+            <span>
+              <img class="footer-contact-us-links-image" src="images/email.png" alt="">
+              <p>Email</p>
+            </span>
+            <a href="mailto:abc@gmail.com" id="footer-mobile-number">abc@gmail.com</a>
+          </li>
+          <li class="footer-contact-us-links">
+            <span>
+              <img class="footer-contact-us-links-image" src="images/location.png" alt="">
+              <p>Address</p>
+            </span>
+            <a href="https://maps.app.goo.gl/BcRmBDJu2eUM2HXCA">
+              TF-A1-22, AKSHAR PAVILLION MALL,<br>
+              Vasna Bhayli Main Rd, near Priya Cinema 391410,<br>
+              Yogi Nagar Twp, Gokul Nagar, Vadodara, Gujarat 390007
+            </a>
+          </li>
+        </div>
+    </section>
+
+    <!-- Bottom Footer -->
+    <section class="footer-bottom">
+      <p>&copy; 2025 Smit Patel. All Rights Reserved.</p>
+      <div class="footer-social">
+        <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="images/x.png" alt="Twitter/X" /></a>
+        <a href="#"><img src="images/youtube.png" alt="YouTube" /></a>
+      </div>
+    </section>
+  </footer>
 
 
 </body>
 <script>
-    fetch("header.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("header").innerHTML = data;
-
-            window.toggleMenu = function () {
-                const nav = document.getElementById("header-navigation");
-                nav.classList.toggle("open");
-            };
-        })
-
-    fetch("footer.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("footer").innerHTML = data;
-        })
+  function toggleMenu() {
+    const nav = document.getElementById("header-navigation");
+    nav.classList.toggle("open");
+  }
 </script>
 <script>
     const form = document.getElementById('realEstateForm');

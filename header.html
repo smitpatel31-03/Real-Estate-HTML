@@ -21,19 +21,28 @@
 
   <section class="header-logo-navigation">
     <div id="header-logo">
-        <a href="index.html">
+        <a href="/">
             <img class="header-logo-image" src="images/logo.avif" alt="">
         </a>
     </div>
 
-    <nav id="header-navigation">
-      <ul class="header-nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutUs.html">About Us</a></li>
-        <li><a href="properties.html">Properties</a></li>
-        <li><a href="contactus.html">Contact Us</a></li>
-      </ul>
-    </nav>
+   <nav id="header-navigation">
+  <div id="nav-close" onclick="toggleMenu()">×</div>
+  <ul class="header-nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="aboutUs.html">About Us</a></li>
+    <li class="dropdown"><a href="properties.html">Properties</a>
+    <ul class="dropdown-menu">
+    <li><a href="product1.html">Product 1</a></li>
+    <li><a href="product2.html">Product 2</a></li>
+    <li><a href="product3.html">Product 3</a></li>
+    <li><a href="product4.html">Product 4</a></li>
+    <li><a href="product5.html">Product 5</a></li>
+    <li><a href="Product6.html">Product 6</a></li>
+  </ul></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+  </ul>
+</nav>
 
     <div id="header-button-div">
       <button class="header-button">Contact Us</button>

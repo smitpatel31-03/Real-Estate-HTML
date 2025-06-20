@@ -13,7 +13,45 @@
 </head>
 
 <body>
-    <header id="header"></header>
+    <header id="header">
+  <section class="header-heading">
+    <p id="header-heading">✨Discover Your Dream Property with ...</p>
+  </section>
+
+  <section class="header-logo-navigation">
+    <div id="header-logo">
+        <a href="/">
+            <img class="header-logo-image" src="images/logo.avif" alt="">
+        </a>
+    </div>
+
+   <nav id="header-navigation">
+  <div id="nav-close" onclick="toggleMenu()">×</div>
+  <ul class="header-nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="aboutUs.html">About Us</a></li>
+    <li class="dropdown"><a href="properties.html">Properties</a>
+    <ul class="dropdown-menu">
+    <li><a href="product1.html">Product 1</a></li>
+    <li><a href="product2.html">Product 2</a></li>
+    <li><a href="product3.html">Product 3</a></li>
+    <li><a href="product4.html">Product 4</a></li>
+    <li><a href="product5.html">Product 5</a></li>
+    <li><a href="Product6.html">Product 6</a></li>
+  </ul></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+  </ul>
+</nav>
+
+    <div id="header-button-div">
+      <button class="header-button">Contact Us</button>
+    </div>
+
+    <div id="hamburger" onclick="toggleMenu()">
+      &#9776;
+    </div>
+  </section>
+</header>
     <main>
         <section class="main-banner-section" id="h-herosection">
             <div class="main-banner-div">
@@ -29,46 +67,46 @@
                     </div>
                     <div class="main-banner-info-cards">
                         <div class="main-banner-info-card">
-                            <h1>200+</h1>
+                            <h1 id="h-banner-card-number1">200+</h1>
                             <p>Happy Customers</p>
                         </div>
                         <div class="main-banner-info-card">
-                            <h1>10k+</h1>
+                            <h1 id="h-banner-card-number2">10k+</h1>
                             <p>Properties For Clients</p>
                         </div>
                         <div class="main-banner-info-card">
-                            <h1>16+</h1>
+                            <h1 id="h-banner-card-number3">16+</h1>
                             <p>Years Of Experence</p>
                         </div>
                     </div>
                 </div>
-                <div class="main-banner-image-div"><img class="main-banner-image" src="images/Banner-Image.jpg" alt="">
+                <div class="main-banner-image-div"><img id="h-banner-image" class="main-banner-image" src="images/Banner-Image.jpg" alt="">
                 </div>
             </div>
             <div class="main-banner-cards-div">
                 <div class="main-banner-card">
                     <img src="images/home.png" alt="">
-                    <h3>Find Your Dream Home</h3>
+                    <h3 id="h-banner-cards-tagline-1">Find Your Dream Home</h3>
                 </div>
                 <div class="main-banner-card">
                     <img src="images/m-card2.png" alt="">
-                    <h3>Unlock Property Value</h3>
+                    <h3 id="h-banner-cards-tagline-2">Unlock Property Value</h3>
                 </div>
                 <div class="main-banner-card">
                     <img src="images/m-card3.png" alt="">
-                    <h3>Effortless Property Management</h3>
+                    <h3 id="h-banner-cards-tagline-3">Effortless Property Management</h3>
                 </div>
                 <div class="main-banner-card">
                     <img src="images/m-card4.png" alt="">
-                    <h3>Smart Investments, Informed Decisions</h3>
+                    <h3 id="h-banner-cards-tagline-4">Smart Investments, Informed Decisions</h3>
                 </div>
             </div>
         </section>
         <section class="main-feature-properties-section" id="h-properties">
             <div class="main-feature-properties-content-button-div">
                 <div class="main-feature-properties-heading-div">
-                    <h1>Featured Properties</h1>
-                    <p>Explore our handpicked selection of featured properties. Each listing offers a glimpse into
+                    <h1 id="h-section1-name">Featured Properties</h1>
+                    <p id="h-section1-discription">Explore our handpicked selection of featured properties. Each listing offers a glimpse into
                         exceptional homes and investments available through .... Click "View Details" for more
                         information.</p>
                 </div>
@@ -79,14 +117,14 @@
             <div class="main-feature-properties-cards-div">
                 <div class="main-feature-properties-card">
                     <div class="main-feature-properties-card-image-div">
-                        <img src="images/Property Image1.jpg" class="main-feature-properties-card-image" alt="">
+                        <img id="h-section1-card-image-1" src="images/Property Image 1.jpg" class="main-feature-properties-card-image" alt="">
                     </div>
                     <div class="main-feature-properties-card-titel-div">
-                        <h1>Seaside Serenity Villa</h1>
-                        <p>A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...<a href="">Read
+                        <h1 id="h-section1-card-name-1">Seaside Serenity Villa</h1>
+                        <p id="h-section1-card-discription-1">A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...<a href="">Read
                                 More</a></p>
                     </div>
-                    <div class="main-feature-properties-card-tags-div">
+                    <!-- <div class="main-feature-properties-card-tags-div">
                         <div class="main-feature-properties-card-tag">
                             <img src="images/bedroom.png" class="main-feature-properties-card-tag-image" alt="">
                             <p class="main-feature-properties-card-tag-name">4-Beadroom</p>
@@ -108,18 +146,20 @@
                         <div class="main-feature-properties-button-div">
                             <button>View Propert Details</button>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="main-feature-properties-card">
                     <div class="main-feature-properties-card-image-div">
-                        <img src="images/Property Image 2.jpg" class="main-feature-properties-card-image" alt="">
+                        <img id="h-section1-card-image-2" src="images/Property Image 2.jpg" class="main-feature-properties-card-image" alt="">
                     </div>
                     <div class="main-feature-properties-card-titel-div">
-                        <h1>Metropolitan Haven</h1>
-                        <p>A chic and fully-furnished 2-bedroom apartment with panoramic city views... <a href="">Read
-                                More</a></p>
+                        <h1 id="h-section1-card-name-2">Metropolitan Haven</h1>
+                        <p id="h-section1-card-discription-2">A chic and fully-furnished 2-bedroom apartment with panoramic city views... 
+                            <a href="">Read
+                                More</a>
+                            </p>
                     </div>
-                    <div class="main-feature-properties-card-tags-div">
+                    <!-- <div class="main-feature-properties-card-tags-div">
                         <div class="main-feature-properties-card-tag">
                             <img src="images/bedroom.png" class="main-feature-properties-card-tag-image" alt="">
                             <p class="main-feature-properties-card-tag-name">2-Beadroom</p>
@@ -141,17 +181,19 @@
                         <div class="main-feature-properties-button-div">
                             <button>View Propert Details</button>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="main-feature-properties-card">
                     <div class="main-feature-properties-card-image-div">
-                        <img src="images/Property Image 3.jpg" class="main-feature-properties-card-image" alt="">
+                        <img id="h-section1-card-image-3" src="images/Property Image 3.jpg" class="main-feature-properties-card-image" alt="">
                     </div>
-                    <div class="main-feature-properties-card-titel-div">
+                    <div id="h-section1-card-name-3" class="main-feature-properties-card-titel-div">
                         <h1>Rustic Retreat Cottage</h1>
-                        <p>An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community... <a href="">Read
-                                More</a></p>
-                    </div>
+                        <p id="h-section1-card-discription-3">An elegant 3-bedroom, 2.5-bathroom townhouse in a gated community... 
+                            <a href="">Read
+                                More</a>
+                            </p>
+                    <!-- </div>
                     <div class="main-feature-properties-card-tags-div">
                         <div class="main-feature-properties-card-tag">
                             <img src="images/bedroom.png" class="main-feature-properties-card-tag-image" alt="">
@@ -174,7 +216,7 @@
                         <div class="main-feature-properties-button-div">
                             <button>View Propert Details</button>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -188,51 +230,51 @@
                 <div class="main-testimonial-card">
                     <div class="main-testimonial-rating">⭐⭐⭐⭐⭐</div>
                     <div class="main-testimonial-content">
-                        <h1>Exceptional Service!</h1>
-                        <p>Our experience with ... was outstanding. Their team's dedication and professionalism made
+                        <h1 id="h-testimonial-tagline-1">Exceptional Service!</h1>
+                        <p id="h-testimonial-description-1">Our experience with ... was outstanding. Their team's dedication and professionalism made
                             finding our dream home a breeze. Highly recommended!</p>
                     </div>
                     <div class="main-testimonial-name-image">
-                        <div class="main-testimonial-image">
+                        <!-- <div class="main-testimonial-image">
                             <img src="images/testimonial.jpg" alt="">
-                        </div>
-                        <div class="main-testimonial-name-name">
-                            <h1>Wade Warren</h1>
-                            <p>USA, California</p>
+                        </div> -->
+                        <div class="main-testimonial-name-name" >
+                            <h1 id="h-testimonial-client-name-1">Wade Warren</h1>
+                            <p id="h-testimonial-client-country-1">USA, California</p>
                         </div>
                     </div>
                 </div>
                 <div class="main-testimonial-card">
                     <div class="main-testimonial-rating">⭐⭐⭐⭐⭐</div>
                     <div class="main-testimonial-content">
-                        <h1>Exceptional Service!</h1>
-                        <p>Our experience with ... was outstanding. Their team's dedication and professionalism made
+                        <h1 id="h-testimonial-tagline-2">Exceptional Service!</h1>
+                        <p id="h-testimonial-description-2">Our experience with ... was outstanding. Their team's dedication and professionalism made
                             finding our dream home a breeze. Highly recommended!</p>
                     </div>
                     <div class="main-testimonial-name-image">
-                        <div class="main-testimonial-image">
+                        <!-- <div class="main-testimonial-image">
                             <img src="images/testimonial.jpg" alt="">
-                        </div>
-                        <div class="main-testimonial-name-name">
-                            <h1>Wade Warren</h1>
-                            <p>USA, California</p>
+                        </div> -->
+                        <div class="main-testimonial-name-name" >
+                            <h1 id="h-testimonial-client-name-2">Wade Warren</h1>
+                            <p id="h-testimonial-client-country-2">USA, California</p>
                         </div>
                     </div>
                 </div>
                 <div class="main-testimonial-card">
                     <div class="main-testimonial-rating">⭐⭐⭐⭐⭐</div>
                     <div class="main-testimonial-content">
-                        <h1>Exceptional Service!</h1>
-                        <p>Our experience with ... was outstanding. Their team's dedication and professionalism made
+                        <h1 id="h-testimonial-tagline-3">Exceptional Service!</h1>
+                        <p id="h-testimonial-description-3">Our experience with ... was outstanding. Their team's dedication and professionalism made
                             finding our dream home a breeze. Highly recommended!</p>
                     </div>
                     <div class="main-testimonial-name-image">
-                        <div class="main-testimonial-image">
+                        <!-- <div class="main-testimonial-image">
                             <img src="images/testimonial.jpg" alt="">
-                        </div>
-                        <div class="main-testimonial-name-name">
-                            <h1>Wade Warren</h1>
-                            <p>USA, California</p>
+                        </div> -->
+                        <div class="main-testimonial-name-name" >
+                            <h1 id="h-testimonial-client-name-3">Wade Warren</h1>
+                            <p id="h-testimonial-client-country-3">USA, California</p>
                         </div>
                     </div>
                 </div>
@@ -266,25 +308,102 @@
 
     </main>
     <footer id="footer">
-    </footer>
+    <!-- Heading Section -->
+    <section class="footer-heading-section">
+      <div class="footer-heading-content">
+        <h2>Start Your Real Estate Journey Today</h2>
+        <p>Your dream property is just a click away. Explore our available properties or contact our expert team to take
+          the first step toward your real estate goals.</p>
+      </div>
+      <div class="footer-cta">
+        <button>Explore Properties</button>
+      </div>
+    </section>
+
+    <!-- Main Footer Content -->
+    <section class="footer-main">
+      <!-- Logo + Email -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="/">
+            <img src="images/logo.avif" alt="Estatein Logo" />
+            <h3 id="comapy-name">Estatein</h3>
+          </a>
+        </div>
+        <div class="footer-subscribe">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, voluptas temporibus officia amet laborum,
+            eveniet nobis voluptatibus vel illo officiis iste asperiores libero?
+          </p>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="/">Home</a>
+          <a href="aboutUs.html">About</a>
+          <a href="properties.html">Properties</a>
+          <a href="contactus.html">Contact</a>
+      </div>
+        <!-- <div>
+        <h4>About Us</h4>
+        <a href="aboutUs.html#a-ourjourney">Our Journey</a>
+        <a href="aboutUs.html#a-ourvalues">Our Values</a>
+        <a href="aboutUs.html#a-ourachievements">Achievements</a>
+        <a href="aboutUs.html#a-ourteam">Our Team</a>
+      </div>
+      <div>
+        <h4>Properties</h4>
+        <a href="properties.html#p-allproperties">All Properties</a>
+      </div> -->
+        <div class="footer-contact-us-div">
+          <h4>Contact</h4>
+          <li class="footer-contact-us-links">
+            <span>
+              <img class="footer-contact-us-links-image" src="images/phone.png" alt="">
+              <p>Call</p>
+            </span>
+            <a href="tel:+919090909090" id="footer-mobile-number">+91 90909 09090</a>
+          </li>
+          <li class="footer-contact-us-links">
+            <span>
+              <img class="footer-contact-us-links-image" src="images/email.png" alt="">
+              <p>Email</p>
+            </span>
+            <a href="mailto:abc@gmail.com" id="footer-mobile-number">abc@gmail.com</a>
+          </li>
+          <li class="footer-contact-us-links">
+            <span>
+              <img class="footer-contact-us-links-image" src="images/location.png" alt="">
+              <p>Address</p>
+            </span>
+            <a href="https://maps.app.goo.gl/BcRmBDJu2eUM2HXCA">
+              TF-A1-22, AKSHAR PAVILLION MALL,<br>
+              Vasna Bhayli Main Rd, near Priya Cinema 391410,<br>
+              Yogi Nagar Twp, Gokul Nagar, Vadodara, Gujarat 390007
+            </a>
+          </li>
+        </div>
+    </section>
+
+    <!-- Bottom Footer -->
+    <section class="footer-bottom">
+      <p>&copy; 2025 Smit Patel. All Rights Reserved.</p>
+      <div class="footer-social">
+        <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="images/x.png" alt="Twitter/X" /></a>
+        <a href="#"><img src="images/youtube.png" alt="YouTube" /></a>
+      </div>
+    </section>
+  </footer>
+
 </body>
 <script>
-    fetch("header.html")
-        .then(res => res.text())
-        .then(data => {
-            document.getElementById("header").innerHTML = data;
-
-            window.toggleMenu = function () {
-        const nav = document.getElementById("header-navigation");
-        nav.classList.toggle("open");
-      };
-        });
-
-    fetch("footer.html")
-    .then(res => res.text())
-    .then(data => {
-        document.getElementById("footer").innerHTML = data;
-    })
+  function toggleMenu() {
+    const nav = document.getElementById("header-navigation");
+    nav.classList.toggle("open");
+  }
 </script>
-
 </html>

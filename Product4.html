@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seaside Serenity Villa</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header">
+  <section class="header-heading">
+    <p>✨Discover Your Dream Property with ...</p>
+  </section>
+
+  <section class="header-logo-navigation">
+    <div id="header-logo">
+        <a href="/">
+            <img class="header-logo-image" src="images/logo.avif" alt="">
+        </a>
+    </div>
+
+   <nav id="header-navigation">
+  <div id="nav-close" onclick="toggleMenu()">×</div>
+  <ul class="header-nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="aboutUs.html">About Us</a></li>
+    <li class="dropdown"><a href="properties.html">Properties</a>
+    <ul class="dropdown-menu">
+    <li><a href="product1.html">Product 1</a></li>
+    <li><a href="product2.html">Product 2</a></li>
+    <li><a href="product3.html">Product 3</a></li>
+    <li><a href="product4.html">Product 4</a></li>
+    <li><a href="product5.html">Product 5</a></li>
+    <li><a href="Product6.html">Product 6</a></li>
+  </ul></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+  </ul>
+</nav>
+
+    <div id="header-button-div">
+      <button class="header-button">Contact Us</button>
+    </div>
+
+    <div id="hamburger" onclick="toggleMenu()">
+      &#9776;
+    </div>
+  </section>
+</header>
+    <main>
+        <section class="properties-details-name-price-images-section">
+            <div class="properties-details-name-price">
+                <div class="properties-details-name">
+                    <h1 id="Product4-name">Seaside Serenity Villa</h1>
+                    <div class="properties-details-location-div">
+                        <img src="images/location.png" alt="">
+                        <p id="Product4-location">Vadodara,Gujrat</p>
+                    </div>
+                </div>
+                <div class="properties-details-price">
+                    <p id="product1-tagline1">Price</p>
+                    <h1 id="product1-tagline1-details">₹2,00,00,000</h1>
+                </div>
+            </div>
+            <div class="properties-details-images-div">
+                <div class="properties-details-all-images">
+                    <img src="images/property01-01.jpg" id="Product4-image1"
+                        class="properties-details-all-image product1" alt="">
+                    <img src="images/property01-02.jpg" id="Product4-image2" class="properties-details-all-image"
+                        alt="">
+                    <img src="images/property01-03.jpg" id="Product4-image3" class="properties-details-all-image"
+                        alt="">
+                </div>
+                <div class="properties-details-images-slider">
+                    <img id="main-image" src="" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="properties-details-description-keyfeatures-section">
+            <div class="properties-details-description-div">
+                <div class="properties-details-description">
+                    <h1>Description</h1>
+                    <p id="Product4-discription">Discover your own piece of paradise with the Seaside Serenity Villa. T
+                        With an open floor plan,
+                        breathtaking ocean views from every room, and direct access to a pristine sandy beach, this
+                        property is the epitome of coastal living.</p>
+                </div>
+                <!-- <div class="properties-details-description-other-details-cards-div">
+                    <div class="properties-details-description-other-details-card">
+                        <div class="properties-details-description-other-details-card-image-name">
+                            <img src="images/bedroom.png" alt="">
+                            <p>Beadrooms</p>
+                        </div>
+                        <p id="Product4-no-beadrooms">04</p>
+                    </div>
+                    <div class="properties-details-description-other-details-card">
+                        <div class="properties-details-description-other-details-card-image-name">
+                            <img src="images/bathroom.png" alt="">
+                            <p>Bathrooms</p>
+                        </div>
+                        <p id="Product4-no-bathrooms">03</p>
+                    </div>
+                    <div class="properties-details-description-other-details-card">
+                        <div class="properties-details-description-other-details-card-image-name">
+                            <img src="images/area.png" alt="">
+                            <p>Area</p>
+                        </div>
+                        <p id="Product4-area">2,500 Square Feet</p>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+    <!-- Heading Section -->
+    <section class="footer-heading-section">
+      <div class="footer-heading-content">
+        <h2>Start Your Real Estate Journey Today</h2>
+        <p>Your dream property is just a click away. Explore our available properties or contact our expert team to take
+          the first step toward your real estate goals.</p>
+      </div>
+      <div class="footer-cta">
+        <button>Explore Properties</button>
+      </div>
+    </section>
+
+    <!-- Main Footer Content -->
+    <section class="footer-main">
+      <!-- Logo + Email -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="/">
+            <img src="images/logo.avif" alt="Estatein Logo" />
+            <h3 id="comapy-name">Estatein</h3>
+          </a>
+        </div>
+        <div class="footer-subscribe">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, voluptas temporibus officia amet laborum,
+            eveniet nobis voluptatibus vel illo officiis iste asperiores libero?
+          </p>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="/">Home</a>
+          <a href="aboutUs.html">About</a>
+          <a href="properties.html">Properties</a>
+          <a href="contactus.html">Contact</a>
+      </div>
+        <!-- <div>
+        <h4>About Us</h4>
+        <a href="aboutUs.html#a-ourjourney">Our Journey</a>
+        <a href="aboutUs.html#a-ourvalues">Our Values</a>
+        <a href="aboutUs.html#a-ourachievements">Achievements</a>
+        <a href="aboutUs.html#a-ourteam">Our Team</a>
+      </div>
+      <div>
+        <h4>Properties</h4>
+        <a href="properties.html#p-allproperties">All Properties</a>
+      </div> -->
+        <div class="footer-contact-us-div">
+          <h4>Contact</h4>
+          <li class="footer-contact-us-links">
+            <span>
+              <img class="footer-contact-us-links-image" src="images/phone.png" alt="">
+              <p>Call</p>
+            </span>
+            <a href="tel:+919090909090" id="footer-mobile-number">+91 90909 09090</a>
+          </li>
+          <li class="footer-contact-us-links">
+            <span>
+              <img class="footer-contact-us-links-image" src="images/email.png" alt="">
+              <p>Email</p>
+            </span>
+            <a href="mailto:abc@gmail.com" id="footer-mobile-number">abc@gmail.com</a>
+          </li>
+          <li class="footer-contact-us-links">
+            <span>
+              <img class="footer-contact-us-links-image" src="images/location.png" alt="">
+              <p>Address</p>
+            </span>
+            <a href="https://maps.app.goo.gl/BcRmBDJu2eUM2HXCA">
+              TF-A1-22, AKSHAR PAVILLION MALL,<br>
+              Vasna Bhayli Main Rd, near Priya Cinema 391410,<br>
+              Yogi Nagar Twp, Gokul Nagar, Vadodara, Gujarat 390007
+            </a>
+          </li>
+        </div>
+    </section>
+
+    <!-- Bottom Footer -->
+    <section class="footer-bottom">
+      <p>&copy; 2025 Smit Patel. All Rights Reserved.</p>
+      <div class="footer-social">
+        <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="images/x.png" alt="Twitter/X" /></a>
+        <a href="#"><img src="images/youtube.png" alt="YouTube" /></a>
+      </div>
+    </section>
+  </footer>
+</body>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("header-navigation");
+    nav.classList.toggle("open");
+  }
+</script>
+<script>
+    document.getElementById("main-image").src = document.querySelector(".product1").src
+
+    document.querySelectorAll(".properties-details-all-image").forEach(img => {
+        console.log("img :", img);
+
+        // document.getElementById("main-image").src = img[0].src
+        img.addEventListener("click", () => {
+            document.querySelector(".properties-details-images-slider").innerHTML = `
+             <img src=${img.src} id="main-image" alt="">`
+        })
+    })
+
+
+</script>
+
+</html>

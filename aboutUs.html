@@ -13,14 +13,52 @@
 </head>
 
 <body>
-    <header id="header"></header>
+    <header id="header">
+  <section class="header-heading">
+    <p id="header-heading">✨Discover Your Dream Property with ...</p>
+  </section>
+
+  <section class="header-logo-navigation">
+    <div id="header-logo">
+        <a href="/">
+            <img class="header-logo-image" src="images/logo.avif" alt="">
+        </a>
+    </div>
+
+   <nav id="header-navigation">
+  <div id="nav-close" onclick="toggleMenu()">×</div>
+  <ul class="header-nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="aboutUs.html">About Us</a></li>
+    <li class="dropdown"><a href="properties.html">Properties</a>
+    <ul class="dropdown-menu">
+    <li><a href="product1.html">Product 1</a></li>
+    <li><a href="product2.html">Product 2</a></li>
+    <li><a href="product3.html">Product 3</a></li>
+    <li><a href="product4.html">Product 4</a></li>
+    <li><a href="product5.html">Product 5</a></li>
+    <li><a href="Product6.html">Product 6</a></li>
+  </ul></li>
+    <li><a href="contactus.html">Contact Us</a></li>
+  </ul>
+</nav>
+
+    <div id="header-button-div">
+      <button class="header-button">Contact Us</button>
+    </div>
+
+    <div id="hamburger" onclick="toggleMenu()">
+      &#9776;
+    </div>
+  </section>
+</header>
     <main>
         <section class="aboutus-banner-section" id="a-ourjourney">
             <div class="aboutus-banner-content">
                 <div class="aboutus-banner-heading">
-                    <h1>Our Journey</h1>
+                    <h1 id="a-banner-name">Our Journey</h1>
                     <div class="aboutus-banner-paragraph-box">
-                        <p>
+                        <p id="a-banner-discription">
                             Our story is one of continuous growth and evolution. We started as a small team with big
                             dreams, determined to create a real estate platform that transcended the ordinary. Over the
                             years, we've expanded our reach, forged valuable partnerships, and gained the trust of
@@ -30,58 +68,63 @@
                 </div>
                 <div class="aboutus-banner-info-cards">
                     <div class="aboutus-banner-info-card">
-                        <h1>200+</h1>
-                        <p>Happy Customers</p>
+                        <h1 id="a-banner-card-number1">200+</h1>
+                        <p id="a-banner-card-tagline1">Happy Customers</p>
                     </div>
                     <div class="aboutus-banner-info-card">
-                        <h1>10k+</h1>
-                        <p>Properties For Clients</p>
+                        <h1 id="a-banner-card-number2">10k+</h1>
+                        <p id="a-banner-card-tagline2">Properties For Clients</p>
                     </div>
                     <div class="aboutus-banner-info-card">
-                        <h1>16+</h1>
-                        <p>Years Of Experience</p>
+                        <h1 id="a-banner-card-number3">16+</h1>
+                        <p id="a-banner-card-tagline2">Years Of Experience</p>
                     </div>
                 </div>
             </div>
             <div class="aboutus-banner-image-div">
-                <img class="aboutus-banner-image" src="images/Banner-Image.jpg" alt="">
+                <img id="a-banner-image" class="aboutus-banner-image" src="images/Banner-Image.jpg" alt="">
             </div>
         </section>
 
         <section class="aboutus-values-section" id="a-ourvalues">
             <div class="aboutus-values-div">
                 <h1>Our Values</h1>
-                <p>Our story is one of continuous growth and evolution. We started as a small team with big dreams,
+                <p id="a-values-discripion">Our story is one of continuous growth and evolution. We started as a small
+                    team with big dreams,
                     determined to create a real estate platform that transcended the ordinary.</p>
             </div>
             <div class="aboutus-values-cards">
                 <div class="aboutus-value-card">
                     <div class="aboutus-value-card-image-title">
                         <img src="images/trust.png" alt="">
-                        <h1>Trust</h1>
+                        <h1 id="a-values-card-name-1">Trust</h1>
                     </div>
-                    <p>Trust is the cornerstone of every successful real estate transaction.</p>
+                    <p id="a-values-card-discription-1">Trust is the cornerstone of every successful real estate
+                        transaction.</p>
                 </div>
                 <div class="aboutus-value-card">
                     <div class="aboutus-value-card-image-title">
                         <img src="images/trust.png" alt="">
-                        <h1>Trust</h1>
+                        <h1 id="a-values-card-name-2">Trust</h1>
                     </div>
-                    <p>Trust is the cornerstone of every successful real estate transaction.</p>
+                    <p id="a-values-card-discription-2">Trust is the cornerstone of every successful real estate
+                        transaction.</p>
                 </div>
                 <div class="aboutus-value-card">
                     <div class="aboutus-value-card-image-title">
                         <img src="images/trust.png" alt="">
-                        <h1>Trust</h1>
+                        <h1 id="a-values-card-name-3">Trust</h1>
                     </div>
-                    <p>Trust is the cornerstone of every successful real estate transaction.</p>
+                    <p id="a-values-card-discription-3">Trust is the cornerstone of every successful real estate
+                        transaction.</p>
                 </div>
                 <div class="aboutus-value-card">
                     <div class="aboutus-value-card-image-title">
                         <img src="images/trust.png" alt="">
-                        <h1>Trust</h1>
+                        <h1 id="a-values-card-name-4">Trust</h1>
                     </div>
-                    <p>Trust is the cornerstone of every successful real estate transaction.</p>
+                    <p id="a-values-card-discription-4">Trust is the cornerstone of every successful real estate
+                        transaction.</p>
                 </div>
             </div>
         </section>
@@ -89,117 +132,46 @@
         <section class="aboutus-achivments-section" id="a-ourachivements">
             <div class="aboutus-achivments-heading">
                 <h1>Our Achievements</h1>
-                <p>Our story is one of continuous growth and evolution. We started as a small team with big dreams,
+                <p id="a-achivements-discription">Our story is one of continuous growth and evolution. We started as a
+                    small team with big dreams,
                     determined to create a real estate platform that transcended the ordinary.</p>
             </div>
             <div class="aboutus-achivments-cards-div">
                 <div class="aboutus-achivments-card">
-                    <h1>3+ Years of Excellence</h1>
-                    <p>With over 3 years in the industry, we've amassed a wealth of knowledge and experience, becoming a
+                    <h1 id="a-achivements-heading-1">3+ Years of Excellence</h1>
+                    <p id="a-achivements-discription-1">With over 3 years in the industry, we've amassed a wealth of
+                        knowledge and experience, becoming a
                         go-to resource for all things real estate.</p>
                 </div>
                 <div class="aboutus-achivments-card">
-                    <h1>Happy Clients</h1>
-                    <p>Our greatest achievement is the satisfaction of our clients. Their success stories fuel our
+                    <h1 id="a-achivements-heading-2">Happy Clients</h1>
+                    <p id="a-achivements-discription-2">Our greatest achievement is the satisfaction of our clients.
+                        Their success stories fuel our
                         passion for what we do.</p>
                 </div>
                 <div class="aboutus-achivments-card">
-                    <h1>Industry Recognition</h1>
-                    <p>We’ve earned the respect of our peers and industry leaders, with accolades and awards that
+                    <h1 id="a-achivements-heading-3">Industry Recognition</h1>
+                    <p id="a-achivements-discription-3">We’ve earned the respect of our peers and industry leaders, with
+                        accolades and awards that
                         reflect our commitment to excellence.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="aboutus-experience-section" id="a-ourexperience">
-            <div class="aboutus-experience-heading-div">
-                <h1>Navigating the ... Experience</h1>
-                <p>At ..., we've designed a straightforward process to help you find and purchase your dream
-                    property with ease. Here's a step-by-step guide to how it all works.</p>
-            </div>
-
-            <div class="aboutus-experience-cards-div">
-                <div class="aboutus-experience-card">
-                    <div class="aboutus-experience-card-step">
-                        <p>Step 01</p>
-                    </div>
-                    <div class="aboutus-experience-card-content">
-                        <h1>Discover a World of Possibilities</h1>
-                        <p>Your journey begins with exploring our carefully curated property listings. Use our intuitive
-                            search tools to filter properties based on your preferences, including location, type, size,
-                            and budget.</p>
-                    </div>
-                </div>
-                <div class="aboutus-experience-card">
-                    <div class="aboutus-experience-card-step">
-                        <p>Step 01</p>
-                    </div>
-                    <div class="aboutus-experience-card-content">
-                        <h1>Discover a World of Possibilities</h1>
-                        <p>Your journey begins with exploring our carefully curated property listings. Use our intuitive
-                            search tools to filter properties based on your preferences, including location, type, size,
-                            and budget.</p>
-                    </div>
-                </div>
-                <div class="aboutus-experience-card">
-                    <div class="aboutus-experience-card-step">
-                        <p>Step 01</p>
-                    </div>
-                    <div class="aboutus-experience-card-content">
-                        <h1>Discover a World of Possibilities</h1>
-                        <p>Your journey begins with exploring our carefully curated property listings. Use our intuitive
-                            search tools to filter properties based on your preferences, including location, type, size,
-                            and budget.</p>
-                    </div>
-                </div>
-                <div class="aboutus-experience-card">
-                    <div class="aboutus-experience-card-step">
-                        <p>Step 01</p>
-                    </div>
-                    <div class="aboutus-experience-card-content">
-                        <h1>Discover a World of Possibilities</h1>
-                        <p>Your journey begins with exploring our carefully curated property listings. Use our intuitive
-                            search tools to filter properties based on your preferences, including location, type, size,
-                            and budget.</p>
-                    </div>
-                </div>
-                <div class="aboutus-experience-card">
-                    <div class="aboutus-experience-card-step">
-                        <p>Step 01</p>
-                    </div>
-                    <div class="aboutus-experience-card-content">
-                        <h1>Discover a World of Possibilities</h1>
-                        <p>Your journey begins with exploring our carefully curated property listings. Use our intuitive
-                            search tools to filter properties based on your preferences, including location, type, size,
-                            and budget.</p>
-                    </div>
-                </div>
-                <div class="aboutus-experience-card">
-                    <div class="aboutus-experience-card-step">
-                        <p>Step 01</p>
-                    </div>
-                    <div class="aboutus-experience-card-content">
-                        <h1>Discover a World of Possibilities</h1>
-                        <p>Your journey begins with exploring our carefully curated property listings. Use our intuitive
-                            search tools to filter properties based on your preferences, including location, type, size,
-                            and budget.</p>
-                    </div>
                 </div>
             </div>
         </section>
 
         <section class="aboutus-our-team-section" id="a-ourteam">
             <div class="aboutus-our-team-heading">
-                <h1>Meet the ... Team</h1>
-                <p>At ..., our success is driven by the dedication and expertise of our team. Get to know the
+                <h1>Meet the <p class="a-company-name">...</p> Team</h1>
+                <p id="a-team-discription">At ..., our success is driven by the dedication and expertise of our team.
+                    Get to know the
                     people behind our mission to make your real estate dreams a reality.</p>
             </div>
             <div class="aboutus-our-team-cards-div">
                 <div class="aboutus-our-team-card">
                     <div class="aboutus-our-team-card-photo-div">
-                        <img src="images/Founder.jpg" alt="Max Mitchell" class="aboutus-our-team-card-photo">
-                        <h1>Max Mitchell</h1>
-                        <p>Founder</p>
+                        <img id="a-team-image-1" src="images/Founder.jpg" alt="Max Mitchell"
+                            class="aboutus-our-team-card-photo">
+                        <h1 id="a-team-person-name-1">Max Mitchell</h1>
+                        <p id="a-team-person-position-1">Founder</p>
                         <div class="aboutus-our-team-card-button">
                             <p>Say Hello 👋</p>
                             <button><img src="images/message.png" alt="Call Icon"></button>
@@ -208,9 +180,10 @@
                 </div>
                 <div class="aboutus-our-team-card">
                     <div class="aboutus-our-team-card-photo-div">
-                        <img src="images/Founder.jpg" alt="Max Mitchell" class="aboutus-our-team-card-photo">
-                        <h1>Sarah Johnson</h1>
-                        <p>Chief Real Estate Officer</p>
+                        <img id="a-team-image-2" src="images/Founder.jpg" alt="Max Mitchell"
+                            class="aboutus-our-team-card-photo">
+                        <h1 id="a-team-person-name-2">Sarah Johnson</h1>
+                        <p id="a-team-person-position-2">Chief Real Estate Officer</p>
                         <div class="aboutus-our-team-card-button">
                             <p>Say Hello 👋</p>
                             <button><img src="images/message.png" alt="Call Icon"></button>
@@ -219,9 +192,10 @@
                 </div>
                 <div class="aboutus-our-team-card">
                     <div class="aboutus-our-team-card-photo-div">
-                        <img src="images/Founder.jpg" alt="Max Mitchell" class="aboutus-our-team-card-photo">
-                        <h1>David Brown</h1>
-                        <p>Head of Property Management</p>
+                        <img id="a-team-image-3" src="images/Founder.jpg" alt="Max Mitchell"
+                            class="aboutus-our-team-card-photo">
+                        <h1 id="a-team-person-name-3">David Brown</h1>
+                        <p id="a-team-person-position-3">Head of Property Management</p>
                         <div class="aboutus-our-team-card-button">
                             <p>Say Hello 👋</p>
                             <button><img src="images/message.png" alt="Call Icon"></button>
@@ -230,9 +204,10 @@
                 </div>
                 <div class="aboutus-our-team-card">
                     <div class="aboutus-our-team-card-photo-div">
-                        <img src="images/Founder.jpg" alt="Max Mitchell" class="aboutus-our-team-card-photo">
-                        <h1>Michael Turner</h1>
-                        <p>Legal Counsel</p>
+                        <img id="a-team-image-4" src="images/Founder.jpg" alt="Max Mitchell"
+                            class="aboutus-our-team-card-photo">
+                        <h1 id="a-team-person-name-4">Michael Turner</h1>
+                        <p id="a-team-person-position-4">Legal Counsel</p>
                         <div class="aboutus-our-team-card-button">
                             <p>Say Hello 👋</p>
                             <button><img src="images/message.png" alt="Call Icon"></button>
@@ -242,118 +217,162 @@
             </div>
         </section>
 
-        <section class="aboutus-our-valuabe-client-section" id="a-ourclient">
-            <div class="aboutus-our-valuabe-client-heading-div">
-                <h1>Our Valued Clients</h1>
-                <p>At ..., we have had the privilege of working with a diverse range of clients across various
-                    industries. Here are some of the clients we've had the pleasure of serving</p>
-            </div>
-            <div class="aboutus-our-valuabe-client-cards-div">
-                <div class="aboutus-our-valuabe-client-card">
-                    <div class="aboutus-our-valuabe-client-card-comanyname-link-div">
-                        <div class="aboutus-our-valuabe-client-card-comanyname">
-                            <p>Since 2019</p>
-                            <h1>ABC Corporation</h1>
-                        </div>
-                        <div class="aboutus-our-valuabe-client-card-button-link">
-                            <button><a href="">Visit Website</a></button>
-                        </div>
-                    </div>
-                    <div class="aboutus-our-valuabe-client-card-comany-details-div">
-                        <div class="aboutus-our-valuabe-client-card-comany-details-domian-details">
-                            <div class="aboutus-our-valuabe-client-card-comany-details-domian">
-                                <img src="images/domain.png" alt="">
-                                <p>Domain</p>
-                            </div>
-                            <div class="aboutus-our-valuabe-client-card-comany-details-domian-name">
-                                <p>
-                                    Commercial Real Estate
-                                </p>
-                            </div>
-                        </div>
-                        <div class="aboutus-our-valuabe-client-card-comany-details-Category-details">
-                            <div class="aboutus-our-valuabe-client-card-comany-details-Category">
-                                <img src="images/categories.png" alt="">
-                                <p>Category</p>
-                            </div>
-                            <div class="aboutus-our-valuabe-client-card-comany-details-Category-name">
-                                <p>
-                                    Luxury Home Development
-                                </p>
-                            </div>
-                        </div>
-                        <div>
+<section class="aboutus-our-valuabe-client-section" id="a-ourclient">
+  <div class="aboutus-our-valuabe-client-heading-div">
+    <h1>Our Valued Clients</h1>
+  </div>
 
-                        </div>
-                    </div>
-                    <div class="aboutus-our-valuabe-client-card-client-review-div">
-                        <h1>What They Said 🤗</h1>
-                        <p>... expertise in finding the perfect office space for our expanding operations was invaluable. They truly understand our business needs.</p>
-                    </div>
-                </div>
-                <div class="aboutus-our-valuabe-client-card">
-                    <div class="aboutus-our-valuabe-client-card-comanyname-link-div">
-                        <div class="aboutus-our-valuabe-client-card-comanyname">
-                            <p>Since 2018</p>
-                            <h1>GreenTech Enterprises</h1>
-                        </div>
-                        <div class="aboutus-our-valuabe-client-card-button-link">
-                            <button><a href="">Visit Website</a></button>
-                        </div>
-                    </div>
-                    <div class="aboutus-our-valuabe-client-card-comany-details-div">
-                        <div class="aboutus-our-valuabe-client-card-comany-details-domian-details">
-                            <div class="aboutus-our-valuabe-client-card-comany-details-domian">
-                                <img src="images/domain.png" alt="">
-                                <p>Domain</p>
-                            </div>
-                            <div class="aboutus-our-valuabe-client-card-comany-details-domian-name">
-                                <p>
-                                    Commercial Real Estate
-                                </p>
-                            </div>
-                        </div>
-                        <div class="aboutus-our-valuabe-client-card-comany-details-Category-details">
-                            <div class="aboutus-our-valuabe-client-card-comany-details-Category">
-                                <img src="images/categories.png" alt="">
-                                <p>Category</p>
-                            </div>
-                            <div class="aboutus-our-valuabe-client-card-comany-details-Category-name">
-                                <p>
-                                    Retail Space
-                                </p>
-                            </div>
-                        </div>
-                        <div>
+  <div class="aboutus-slider-wrapper">
+    <button class="slider-arrow left" onclick="left()">←</button>
 
-                        </div>
-                    </div>
-                    <div class="aboutus-our-valuabe-client-card-client-review-div">
-                        <h1>What They Said 🤗</h1>
-                        <p>... ability to identify prime retail locations helped us expand our brand presence. They are a trusted partner in our growth.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="aboutus-slider-container">
+      <div class="aboutus-our-valuabe-client-logo-div client-wrapper aboutus-slider-track" id="aboutus-slider-track">
+        <img src="https://bellemontmansions.com/wp-content/uploads/2025/05/Bellemont-Mansion-Final-Logo-1-scaled.png" class="aboutus-our-valuabe-client-logo" alt="">
+        <img src="https://kgprojects.co.in/wp-content/uploads/2020/02/KGP-Main-Logo-Tangerine-7-1-1.png" class="aboutus-our-valuabe-client-logo" alt="">
+        <img src="https://fortunedeveloper.co.in/assets/img/fortune-logo-w.png" class="aboutus-our-valuabe-client-logo" alt="">
+        <img src="https://www.madhuvan.group/assets/image/logo.webp" class="aboutus-our-valuabe-client-logo" alt="">
+        <img src="https://www.darshanam.co.in/images/darshanam_logo.svg" class="aboutus-our-valuabe-client-logo" alt="">
+        <img src="https://nilambergroup.in/img/nilamber_group_logo.png" class="aboutus-our-valuabe-client-logo" alt="">
+        <img src="https://i0.wp.com/raamah.in/wp-content/uploads/2021/04/image-2.png?fit=136%2C86&ssl=1" class="aboutus-our-valuabe-client-logo" alt="">
+        <img src="https://www.neptunerealtygroup.com/wp-content/uploads/2023/02/Neptune-logo-white-1.svg" class="aboutus-our-valuabe-client-logo" alt="">
+        <img src="https://praptigroup.com/wp-content/uploads/2019/11/prapti-group.png" class="aboutus-our-valuabe-client-logo" alt="">
+      </div>
+    </div>
+
+    <button class="slider-arrow right" onclick="right()">→</button>
+  </div>
+</section>
+
+
     </main>
-     <footer id="footer"></footer>
+    <footer id="footer">
+    <!-- Heading Section -->
+    <section class="footer-heading-section">
+      <div class="footer-heading-content">
+        <h2>Start Your Real Estate Journey Today</h2>
+        <p>Your dream property is just a click away. Explore our available properties or contact our expert team to take
+          the first step toward your real estate goals.</p>
+      </div>
+      <div class="footer-cta">
+        <button>Explore Properties</button>
+      </div>
+    </section>
+
+    <!-- Main Footer Content -->
+    <section class="footer-main">
+      <!-- Logo + Email -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="/">
+            <img src="images/logo.avif" alt="Estatein Logo" />
+            <h3 id="comapy-name">Estatein</h3>
+          </a>
+        </div>
+        <div class="footer-subscribe">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, voluptas temporibus officia amet laborum,
+            eveniet nobis voluptatibus vel illo officiis iste asperiores libero?
+          </p>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="/">Home</a>
+          <a href="aboutUs.html">About</a>
+          <a href="properties.html">Properties</a>
+          <a href="contactus.html">Contact</a>
+      </div>
+        <!-- <div>
+        <h4>About Us</h4>
+        <a href="aboutUs.html#a-ourjourney">Our Journey</a>
+        <a href="aboutUs.html#a-ourvalues">Our Values</a>
+        <a href="aboutUs.html#a-ourachievements">Achievements</a>
+        <a href="aboutUs.html#a-ourteam">Our Team</a>
+      </div>
+      <div>
+        <h4>Properties</h4>
+        <a href="properties.html#p-allproperties">All Properties</a>
+      </div> -->
+        <div class="footer-contact-us-div">
+          <h4>Contact</h4>
+          <li class="footer-contact-us-links">
+            <span>
+              <img class="footer-contact-us-links-image" src="images/phone.png" alt="">
+              <p>Call</p>
+            </span>
+            <a href="tel:+919090909090" id="footer-mobile-number">+91 90909 09090</a>
+          </li>
+          <li class="footer-contact-us-links">
+            <span>
+              <img class="footer-contact-us-links-image" src="images/email.png" alt="">
+              <p>Email</p>
+            </span>
+            <a href="mailto:abc@gmail.com" id="footer-mobile-number">abc@gmail.com</a>
+          </li>
+          <li class="footer-contact-us-links">
+            <span>
+              <img class="footer-contact-us-links-image" src="images/location.png" alt="">
+              <p>Address</p>
+            </span>
+            <a href="https://maps.app.goo.gl/BcRmBDJu2eUM2HXCA">
+              TF-A1-22, AKSHAR PAVILLION MALL,<br>
+              Vasna Bhayli Main Rd, near Priya Cinema 391410,<br>
+              Yogi Nagar Twp, Gokul Nagar, Vadodara, Gujarat 390007
+            </a>
+          </li>
+        </div>
+    </section>
+
+    <!-- Bottom Footer -->
+    <section class="footer-bottom">
+      <p>&copy; 2025 Smit Patel. All Rights Reserved.</p>
+      <div class="footer-social">
+        <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/linkedin.png" alt="LinkedIn" /></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="images/x.png" alt="Twitter/X" /></a>
+        <a href="#"><img src="images/youtube.png" alt="YouTube" /></a>
+      </div>
+    </section>
+  </footer>
 </body>
 <script>
-  fetch("header.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("header").innerHTML = data;
+  function toggleMenu() {
+    const nav = document.getElementById("header-navigation");
+    nav.classList.toggle("open");
+  }
+</script>
 
-      window.toggleMenu = function () {
-        const nav = document.getElementById("header-navigation");
-        nav.classList.toggle("open");
-      };
+<script>
+    let currunt = 0;
+    const element = document.querySelectorAll(".aboutus-our-valuabe-client-logo");
+    const total = element.length;
+
+    // Show first 3 elements on load
+    showGroup(currunt);
+
+    function showGroup(startIndex) {
+    element.forEach(el => {
+        el.style.display = "none";
+        el.style.order = 0; // reset order
     });
 
-    fetch("footer.html")
-    .then(res => res.text())
-    .then(data => {
-        document.getElementById("footer").innerHTML = data;
-    })
+    for (let i = 0; i < 3; i++) {
+        const index = (startIndex + i) % total;
+        element[index].style.display = "inline-block";
+        element[index].style.order = i + 1; // force order
+    }
+}
+    function right() {
+        currunt = (currunt + 1) % total;
+        showGroup(currunt);
+    }
+
+    function left() {
+        currunt = (currunt - 1 + total) % total;
+        showGroup(currunt);
+    }
 </script>
+
 </html>
