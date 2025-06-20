@@ -529,7 +529,7 @@ display: none;
 /* Featured Properties Section */
 .main-feature-properties-section {
     width: 100%;
-    background-color: #FAFAFA;
+    background-color: #e1e1e1;
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
@@ -801,7 +801,7 @@ display: none;
 }
 
 .main-FAQ-section {
-    background-color: #FAFAFA;
+    background-color: #e1e1e1;
     padding: 60px 20px;
     color: #222;
 }
@@ -2512,7 +2512,6 @@ padding: 10px 15px;
 
     .main-feature-properties-section {
         padding: 1rem;
-        background-color: #fafafa;
     }
 
     .main-feature-properties-card {
